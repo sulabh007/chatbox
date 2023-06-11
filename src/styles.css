@@ -26,6 +26,13 @@
   background-size: cover;
 }
 
+.icon{
+  height: 75px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
 .message {
   display: block;
   margin-bottom: 10px;

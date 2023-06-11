@@ -2,6 +2,7 @@ import './App.css';
 import React, { Component } from 'react';
 import axios from "axios";
 import './styles.css'; // Import the CSS file
+import iconImage from './assets/My project.png'
 class Chatbot extends Component {
 
   constructor(props) {
@@ -75,6 +76,7 @@ class Chatbot extends Component {
   render() {
     return (
       <div className="chatbot">
+        <img className='icon' src={iconImage} alt="Icon" />
         <div className="chat-window">
           {this.state.messages.map((message, index) => (
             <div key={index} className={`message ${message.type}`}>
